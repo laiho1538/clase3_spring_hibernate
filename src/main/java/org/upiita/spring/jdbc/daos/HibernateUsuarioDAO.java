@@ -53,6 +53,7 @@ public class HibernateUsuarioDAO implements UsuarioDAO {
 
 	public List<Usuario> buscaPorNombre(String nombre) {
 		
+		//comentario para probar GIT
 		Session session = sessionFactory.openSession();
 		Criteria criterio = session.createCriteria(Usuario.class);
 		criterio.add(Restrictions.like("nombre","%"+nombre+"%"));
